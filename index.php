@@ -38,9 +38,9 @@ mysqli_close($con);
   <img class="mb-4" src="img/login.png" alt="" width="80" height="80">
   <h1 class="h3 mb-3 font-weight-normal">Insira suas credenciais</h1>
   <label for="inputEmail" class="sr-only">Endereçode e-mail</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de E-mail" required autofocus>
+  <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Endereço de E-mail" required autofocus>
   <label for="inputPassword" class="sr-only">Senha</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+  <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Senha" required>
   
   <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
   <p class="mt-5 mb-3 text-muted">Warley Máximo &copy; 2017-2020</p>
