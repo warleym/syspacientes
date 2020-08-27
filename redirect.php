@@ -6,6 +6,7 @@ $email = $_POST["inputEmail"];
 $senha = $_POST["inputPassword"];
 $validou = false;
 $erro = "Nenhuma credencial encontrada";
+$id_usuario = 0;
 
 // validar login
 
@@ -15,7 +16,7 @@ if($rows=mysqli_fetch_row($resp)){
     if($senha == $rows[2]){
         $erro = "";
         $validou = true;
-
+        $id_usuario = $rows[0];
     }else{
         $erro = "Credenciais inválidas!";
         $validou = false;
@@ -29,6 +30,7 @@ if($validou){
 echo "<hr>";
 echo "E-mail: " . $email."<br>";
 echo "Senha: ".$senha;
+header("location:admin.php?id_usuario=id_usuario");
 }else{
     header("location:index.php?erro=$erro");
 }
