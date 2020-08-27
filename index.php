@@ -1,6 +1,7 @@
 <?php
 //echo "boa noite!";
 
+/*
 $con = mysqli_connect(
     "localhost",
     "root",
@@ -14,9 +15,10 @@ echo "Conectou!!!";
 echo "<br>";
 echo "Informações do host: " .mysqli_get_host_info($con);
 mysqli_close($con);
+*/
 
-//$nome = $_GET["nome"];
-//echo "O Nome é: ".$nome;
+$nome = $_GET["nome"];
+echo "O Nome é: ".$nome;
 
 
 
