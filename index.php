@@ -16,6 +16,13 @@ echo "<br>";
 echo "Informações do host: " .mysqli_get_host_info($con);
 mysqli_close($con);
 */
+$onload = "";
+$erro = $_GET['erro'];
+if(strlen($erro) > 0){
+    $onload = "onload='alert(\"$erro\")'";
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,7 +30,7 @@ mysqli_close($con);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SysPacientes</title>
-    <link rel="icon" href="img/favicon/favicon1.ico">
+    <link rel="icon" href="img/favicon/favicon2.ico">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
@@ -44,7 +51,7 @@ mysqli_close($con);
      }
     </script>
 </head>
-<body class="text-center">
+<body class="text-center"<?php echo $onload; ?>>
 <form class="form-signin" 
     method="post"
     action="redirect.php"
