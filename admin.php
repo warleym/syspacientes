@@ -5,7 +5,7 @@ session_start();
     
     
     $id_usuario = $_GET["id_usuario"];
-    $id_usuario_sesseion = $
+    $id_usuario_sesseion = $_SESSION['id_usuario'];
     $nome_usuario = "";
 
     $sql = "SELECT nome FROM usuarios WHERE id = " . $id_usuario;
@@ -78,7 +78,8 @@ session_start();
 <!-- Main component for a primary marketing message or call to action -->
 <div class="jumbotron">
   <h1>Sistema de Pacientes da COVID - 19</h1>
-  <p>Bem vindo <?php echo($nome_usuario); ?>.</p>     
+  <p>Bem vindo <?php echo($nome_usuario); ?>.</p>
+  <p>Sessão: <?php echo($id_usuario_sesseion); ?></p>   
   <p>
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Acesso &raquo;</a>
   </p>
