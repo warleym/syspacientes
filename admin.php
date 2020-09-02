@@ -24,6 +24,8 @@ session_start();
     <title>SysPacientes - ADM</title>
     <link rel="icon" href="img/favicon/favicon2.ico">
 
+    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar/">
+
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
