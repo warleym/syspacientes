@@ -97,12 +97,6 @@ session_start();
 </body>
 
 
-<body>
-    <?php
-    echo "<h3>Bem vindo: ". $nome_usuario . "</h3>";
-    ?>
-    
-</body>
 </html>
 
 
