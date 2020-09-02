@@ -54,7 +54,7 @@ session_start();
 
 <body>
 
-    <div class="container">
+    
 
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
@@ -104,7 +104,7 @@ session_start();
         </p>
       </div>
 
-    </div> <!-- /container -->
+    
 
 
     <!-- Bootstrap core JavaScript
