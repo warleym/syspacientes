@@ -4,8 +4,10 @@ session_start();
     require_once('conexao.php');
     
     
-    $id_usuario = $_GET["id_usuario"];
-    $id_usuario_sesseion = $_SESSION['id_usuario'];
+    //$id_usuario = $_GET["id_usuario"];
+    
+    //recuperando dados da sessao
+    $id_usuario = $_SESSION['id_usuario'];
     $nome_usuario = "";
 
     $sql = "SELECT nome FROM usuarios WHERE id = " . $id_usuario;
@@ -79,7 +81,6 @@ session_start();
 <div class="jumbotron">
   <h1>Sistema de Pacientes da COVID - 19</h1>
   <p>Bem vindo <?php echo($nome_usuario); ?>.</p>
-  <p>Sessão: <?php echo($id_usuario_sesseion); ?></p>   
   <p>
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Acesso &raquo;</a>
   </p>
