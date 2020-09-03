@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     require_once('variaveis.php');
     require_once('conexao.php');
     
@@ -38,8 +38,6 @@ if(strlen($id_usuario) == 0){
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet">
 </head>
-
-
 <body>
 
 <div class="container">
@@ -90,6 +88,10 @@ if(strlen($id_usuario) == 0){
   <p>
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Acesso &raquo;</a>
   </p>
+<p>
+<a class="btn btn-lg btn-success" href="usuario.php" role="button">Editar usuário</a>
+</p>
+
 <p>
 <a class="btn btn-lg btn-danger" href="logout.php" role="button">Sair</a>
 </p>
