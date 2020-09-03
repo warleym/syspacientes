@@ -97,7 +97,7 @@ while($rows=mysqli_fetch_row($resp)){
     $idUsuario = $rows[0];
     $nomeUsuario = $rows[1];
     echo("<tr>");
-    echo("<td>$nomeUsuario</td");
+    echo("<td>$nomeUsuario</td>");
     echo("<td><a class='btn btn-lg btn-success' href='usuario.php?idUsuario=$idUsuario' role='button'>...</a></td>");
     echo("</tr>");
 }
