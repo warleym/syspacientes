@@ -51,8 +51,9 @@ $sql = "SELECT nome, email, senha FROM usuarios WHERE id = " . $idUsuario;
     value ="<?php echo($senhaUsuario);?>"
     >
   </div>
-  
-  <button type="submit" class="btn btn-primary">Gravar</button>
+  <input type="hidden" id="inputIdusuario" name="inputIdUsuario" value="<?php echo($idUsuario) ?>">
+  <button type="submit" class="btn btn-success">Gravar</button>&nbsp;
+  <a href="admin.php" class="btn btn-warning" roles="button">Retornar</a>
 </form>
 </div>
 </body>
