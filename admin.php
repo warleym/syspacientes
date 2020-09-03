@@ -10,6 +10,12 @@ session_start();
     $id_usuario = $_SESSION['id_usuario'];
     $nome_usuario = "";
 
+    //validar se codigo do usuario esta na sessao
+if(strlen($id_usuario) == 0){
+    header("location: index.php");
+}
+
+
     $sql = "SELECT nome FROM usuarios WHERE id = " . $id_usuario;
     $resp = mysqli_query($conexao_bd, $sql);
     if($rows=mysqli_fetch_row($resp)){
