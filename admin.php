@@ -84,6 +84,9 @@ session_start();
   <p>
     <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Acesso &raquo;</a>
   </p>
+<p>
+<a class="btn btn-lg btn-danger" href="#" role="button">Sair</a>
+</p>
 </div>
 
 </div> <!-- /container -->
