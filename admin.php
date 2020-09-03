@@ -89,7 +89,7 @@ if(strlen($id_usuario) == 0){
 <tr>
     <td>Nome do usuário</td>
     <td>...</td>
-</th>
+</tr>
 <?php
 $sql = "SELECT id,nome FROM usuarios ORDER BY Nome";
 $resp = mysqli_query($conexao_bd, $sql);
@@ -98,7 +98,7 @@ while($rows=mysqli_fetch_row($resp)){
     $nomeUsuario = $rows[1];
     echo("<tr>");
     echo("<td>$nomeUsuario</td");
-    echo("<td><a class='btn btn-lg btn-success' href='usuario.php?idUs=$idUsuario' role='button'>...</a></td>");
+    echo("<td><a class='btn btn-lg btn-success' href='usuario.php?idUsuario=$idUsuario' role='button'>...</a></td>");
     echo("</tr>");
 }
 ?>
