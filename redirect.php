@@ -5,6 +5,12 @@ require_once('conexao.php');
 $email = $_POST["inputEmail"];
 $senha = $_POST["inputPassword"];
 
+//validando variaveis:
+if(strlen($email)) == 0 && strlen($senha) == 0){
+    header("location: index.php");
+}
+
+
 //iniciando sessão
 session_start();
 $_SESSION['id_usuario'] = 0;
