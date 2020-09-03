@@ -10,7 +10,7 @@ if(strlen(trim($email)) == 0 &&
     strlen(trim($senha)) == 0){
     header("location: index.php");
 }
-exit();
+
 
 
 //iniciando sessão
